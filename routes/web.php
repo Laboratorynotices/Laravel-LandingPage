@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Include controllers
+use App\Http\Controllers\LandingPageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// @TODO удалить путь по умолчанию.
 Route::get('/', function () {
     return view('welcome');
 });
+
+// @TODO новый путь к странице
+Route::get('/landing',
+    [LandingPageController::class, 'view']
+)->name('home');
