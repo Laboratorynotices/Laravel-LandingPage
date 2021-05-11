@@ -32,60 +32,7 @@
   <!-- End Head -->
 
   <body>
-    <!-- Header -->
-    <header id="top">
-      <!-- Navbar --> 
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" id="mainNav">
-		<div class="container">
-		  <a class="navbar-brand js-scroll-trigger" href="#page-top">G2O Gym</a>  
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="ti-menu text-primary"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#top">Home</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#services">Services</a>
-			  </li>
-			   <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#about">About</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#team">Team</a>
-			  </li>
-			   <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#price">Price</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-      <!-- End Navbar --> 
-		<section class="wt-section hero-large hero mt-md-5">
-			<div class="hero-img bg-overlay" data-overlay="0" style="background-image: url({{ asset('img/intro/img5.jpg') }});"></div>
-			<div class="container">
-				<div class="row align-items-center text-white">
-					<div class=" col-md-6">
-						<!-- heading -->
-						<h1 class="text-uppercase mb-3 display-3 font-weight-bolder" data-aos="fade-right">
-							Ultimate Fitness
-						</h1>
-						<button class="btn btn-lg btn-outline-light py-2 mt-3 px-4 btn-pill" data-aos="fade-left">Our Price</button>
-					</div>
-				</div>
-			</div>
-		</section>
-
-    </header>
-    <!-- End Header -->
+    @include('layouts.landingPage.header')
 
     <main role="main">
 
@@ -622,7 +569,7 @@
       </div>
     </footer>
     <!-- End Footer -->
-  
+
     <!-- JS Script Files --> 
     <script src="{{ asset('vendors/jquery.min.js') }}"></script>
     <script src="{{ asset('vendors/jquery.migrate.min.js') }}"></script>
@@ -632,12 +579,12 @@
 
     <!-- Components Vendor  --> 
     <script src="{{ asset('vendors/slick-carousel/slick.min.js') }}"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="{{ asset('vendors/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('vendors/counters/waypoint.min.js') }}"></script>
     <script src="{{ asset('vendors/counters/counterup.min.js') }}"></script>
- 
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="{{ asset('js/scrolling-nav.js') }}"></script>
     <!--Plugin Initialize-->
     <!-- script src="assets/js/global.js"></script -->
@@ -646,7 +593,7 @@
     <!-- Theme Components and Settings --> 
     <script src="{{ asset('vendors/carousel.js') }}"></script>
     <script src="{{ asset('vendors/counters.js') }}"></script>
-	
+
     <!-- END JAVASCRIPTS -->
 	
   </body>
