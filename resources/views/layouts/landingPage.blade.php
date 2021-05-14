@@ -8,8 +8,7 @@
     <main role="main">
 
       @include('layouts.landingPage.services')
-      @include('layouts.landingPage.about')
-      @include('layouts.landingPage.team')
+      @include('layouts.landingPage.aboutBlock')
       @include('layouts.landingPage.amenities')
       @include('layouts.landingPage.portfolio')
       @include('layouts.landingPage.offer')
