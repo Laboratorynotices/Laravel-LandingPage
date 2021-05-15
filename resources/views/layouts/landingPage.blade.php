@@ -12,7 +12,7 @@
       @include('layouts.landingPage.amenities')
       @include('layouts.landingPage.portfolio')
       @include('layouts.landingPage.offer')
-      @include('layouts.landingPage.team2')
+      @include('layouts.landingPage.team')
       @include('layouts.landingPage.price')
       @include('layouts.landingPage.numbers')
       @include('layouts.landingPage.testimonials')
