@@ -25,3 +25,11 @@ Route::get('/', function () {
 Route::get('/landing',
     [LandingPageController::class, 'view']
 )->name('home');
+
+Route::post('/landing',
+    [LandingPageController::class, 'contact']
+)->name('home');
+
+Route::get('/landing#contact',
+    [LandingPageController::class, 'view']
+)->name('homeContact');
